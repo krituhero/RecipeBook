@@ -3,17 +3,12 @@ import './App.css'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 
 
 
 export default function Header(){
   return(
-    <div>
       <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
@@ -27,26 +22,11 @@ export default function Header(){
             React Bootstrap
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Link to='/about' className="about">About Us</Link>
+            <Link to='/cuisines' className="cuisine">Cuisine</Link>
+            <Link to='/popular' className="popular">Popular</Link>            
           </Nav>
-          <Form inline>
-        <Row>
-          <Col xs="auto">
-            <Form.Control
-              type="text"
-              placeholder="Search"
-              className=" mr-sm-2"
-            />
-          </Col>
-          <Col xs="auto">
-            <Button type="submit">Submit</Button>
-          </Col>
-        </Row>
-      </Form>
         </Container>
       </Navbar>
-    </div>
   )
 }

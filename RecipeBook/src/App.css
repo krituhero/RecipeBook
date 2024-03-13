@@ -10,11 +10,30 @@
 }
 
 .bg-body-tertiary{
-  height: 30px;
+  height: 40px;
+}
+.about{
+  color: black;
+  margin: 0px 6px;
+  text-decoration: none;
+}
+
+.cuisine{
+  color: black;
+  margin: 0px 6px;
+  text-decoration: none;
+}
+
+.popular{
+  color: black;
+  margin: 0px 6px;
+  text-decoration: none;
 }
 
 .body-main{
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-right: 25px;
+  margin-left: 25px;
   display: flex;
  height: 100%;
  gap: 10px;
@@ -84,12 +103,25 @@
 .body-main-right-content{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 5%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .content{
+  width: 30%;
   padding-bottom: 0px;
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.footer{
+  background-color: rgb(212, 212, 212);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
